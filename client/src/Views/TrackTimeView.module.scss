@@ -1,0 +1,40 @@
+﻿@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.track-time__crossway_view {
+	#track-time, #add-time {
+		transition: border-color 0.2s ease,
+		box-shadow 0.2s ease;
+		cursor: pointer;
+	}
+
+	#add-time:hover {
+		border-color: rgba($blue, 0.35);
+		box-shadow: 0 0 5px 1px rgba($blue, 0.2);
+	}
+
+	#track-time:hover {
+		border-color: rgba($purple, 0.35);
+		box-shadow: 0 0 5px 1px rgba($purple, 0.2);
+	}
+}
+
+.track-time__timer-view {
+	transition: color 0.2s ease;
+	width: fit-content;
+
+	#track-time__timer-view__stopwatch-icon {
+		color: $purple;
+		transition: color 0.2s ease;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: $danger;
+
+		#track-time__timer-view__stopwatch-icon { display: none; }
+	}
+
+	&:not(:hover) { #track-time__timer-view__stop-icon { display: none; }}
+}

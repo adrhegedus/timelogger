@@ -1,0 +1,26 @@
+﻿@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+#quick-actions {
+	#quick-action__new-task, #quick-action__track-time, #quick-action__new-project {
+		transition: border-color 0.2s ease,
+					box-shadow 0.2s ease;
+		cursor: pointer;
+	}
+
+	#quick-action__new-task:hover {
+		border-color: rgba($red, 0.35);
+		box-shadow: 0 0 5px 1px rgba($red, 0.2);
+	}
+
+	#quick-action__track-time:hover {
+		border-color: rgba($purple, 0.35);
+		box-shadow: 0 0 5px 1px rgba($purple, 0.2);
+	}
+
+	#quick-action__new-project:hover {
+		border-color: rgba($green, 0.35);
+		box-shadow: 0 0 5px 1px rgba($green, 0.2);
+	}
+}

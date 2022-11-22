@@ -1,0 +1,13 @@
+﻿#navbar {
+	background-color: var(--bs-info-dark);
+
+	a {
+		color: var(--bs-light);
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		text-decoration: none;
+
+		svg { font-size: 1.25rem; }
+	}
+}

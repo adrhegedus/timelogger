@@ -1,0 +1,4 @@
+﻿@use "@styles/Tables.scss";
+
+#projects-table, #tasks-table { @extend .hover-table-with-disclosure; }
+#createProject, #createTask { width: fit-content; }

@@ -1,0 +1,3 @@
+﻿@use "@styles/Tables.scss";
+
+#subtasks-table, #times-table { @extend .hover-table-with-disclosure; }

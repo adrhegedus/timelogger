@@ -1,0 +1,47 @@
+//#region Bootstrap overrides
+// Colors
+$body-bg: #F5F5F5;
+$primary: #005DFF;
+$danger: #E24141;
+$success: #5CB367;
+$warning: #EBB400;
+$muted: #999999;
+$info: #3EC1D2;
+$info-dark: #313A52;
+$black: #444444;
+$border: #CCCCCC;
+$background: #F5F5F5;
+$white: #FFFFFF;
+$link: #005DFF;
+
+// Font
+$font-family-sans-serif: "Inter";
+$body-color: $black;
+$link-decoration: none;
+$link-color: $link;
+.fs-7 { font-size: 0.875rem; }
+
+// Badge
+$badge-border-radius: 3px;
+$badge-font-weight: 400;
+
+
+@import "~bootstrap/scss/bootstrap";
+
+//#endregion
+
+
+
+* { -webkit-font-smoothing: antialiased; }
+
+a.link-muted {
+	color: $black;
+	text-decoration: 1px dotted underline $black;
+	transition: color 0.2s ease,
+				text-decoration-color 0.2s ease;
+
+	&:hover {
+		color: $link;
+		text-decoration-color: $link;
+	}
+}

@@ -1,0 +1,23 @@
+﻿@use "@styles/Tables.scss";
+
+#tasks-table {
+	@import "~bootstrap/scss/bootstrap";
+	@extend .hover-table-with-disclosure;
+	margin-bottom: 0;
+
+	th, td {
+		@extend .p-1;
+
+		a.link-muted {
+			color: $black !important;
+			text-decoration: 1px dotted underline $black !important;
+			transition: color 0.2s ease,
+			text-decoration-color 0.2s ease;
+
+			&:hover {
+				color: var(--bs-link-color);
+				text-decoration-color: var(--bs-link-color);
+			}
+		}
+	}
+}

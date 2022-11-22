@@ -1,0 +1,25 @@
+﻿.hover-table-with-disclosure {
+	thead th span {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		white-space: nowrap;
+	}
+
+	tbody tr {
+		transition: background-color 0.2s ease;
+
+		.prog-disclosure {
+			opacity: 0;
+			transition: opacity 0.2s ease;
+
+			& > div { cursor: pointer; }
+		}
+
+		&:hover {
+			background-color: var(--bs-table-hover-bg);
+
+			.prog-disclosure { opacity: 1; }
+		}
+	}
+}

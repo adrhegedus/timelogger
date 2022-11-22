@@ -1,0 +1,63 @@
+﻿@use "~bootstrap/scss/bootstrap";
+
+#modal__window {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(0, 0, 0, 0.75);
+	cursor: pointer;
+
+	#modal__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: stretch;
+		min-width: 40vw;
+
+		cursor: initial;
+
+		#modal__header {
+			@extend .gap-3;
+			@extend .fs-6;
+			@extend .text-light;
+			@extend .container;
+			@extend .mb-2;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			#modal__title {
+				@extend .mb-0;
+				@extend .fw-light;
+			}
+
+			& > button, a {
+				@extend .text-light;
+
+				display: flex;
+				align-items: center;
+				padding: 0;
+
+				background-color: transparent;
+				border: none;
+				font-size: 0.875rem;
+
+				&:focus { outline: none; }
+			}
+
+		}
+
+		#modal__content {
+			@extend .container;
+			@extend .card;
+			@extend .p-5;
+		}
+	}
+}

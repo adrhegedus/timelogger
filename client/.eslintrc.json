@@ -1,0 +1,106 @@
+{
+    "env": {
+        "node": true,
+		"browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+    ],
+	"parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+		"react-hooks",
+		"@typescript-eslint"
+    ],
+    "rules": {
+		"@typescript-eslint/indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+		"curly": [
+			"error",
+			"multi-line"
+		],
+		"eqeqeq": [
+			"warn",
+			"smart"
+		],
+		"func-names": [
+			"warn",
+			"never"
+		],
+		"implicit-arrow-linebreak": [
+			"error",
+			"beside"
+		],
+		"comma-dangle": [
+			"warn", {
+				"objects": "only-multiline"
+			}
+		],
+		"multiline-ternary": [
+			"error",
+			"always-multiline"
+		],
+
+		"block-scoped-var": "warn",
+		"no-empty-function": "error",
+		"no-multi-spaces": "error",
+		"no-unused-labels": "warn",
+		"no-unused-vars": "warn",
+		"vars-on-top": "warn",
+		"block-spacing": "error",
+		"comma-spacing": "error",
+		"comma-style": "warn",
+		"func-call-spacing": "error",
+		"jsx-quotes": "error",
+		"key-spacing": "error",
+		"keyword-spacing": "error",
+		"no-mixed-spaces-and-tabs": "error",
+		"no-trailing-spaces": "error",
+		"spaced-comment": [
+			"warn",
+			"always",
+			{ "markers": ["#region", "#endregion"] }
+		],
+		"arrow-spacing": "error",
+		"prefer-const": "warn",
+		"rest-spread-spacing": "error",
+		"no-magic-numbers": [
+			"warn", 
+			{
+				"ignore": [-1, 0, 1, 100],
+				"ignoreArrayIndexes": true
+			}
+		],
+
+		"react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    	"react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+		"react/prop-types": "off"
+	}
+}

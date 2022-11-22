@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 249.75" height="1em">
+    <g id="c">
+        <g>
+            <rect x="80.98" y="37.03" width="38.05" height="16" style="fill:#6c42be;"/>
+            <rect x="163.79" y="55.23" width="23.41" height="38.05" rx="5" ry="5"
+                  transform="translate(-1.11 145.84) rotate(-45)" style="fill:#6c42be;"/>
+            <circle cx="100" cy="149.75" r="100" style="fill:#e2d9f2;"/>
+            <polygon points="100.21 71.03 87.71 151.03 112.71 151.03 100.21 71.03" style="fill:#6c42be;"/>
+            <circle cx="100" cy="149.75" r="20" style="fill:#6c42be;"/>
+            <rect x="69.27" width="61.46" height="38.05" rx="5" ry="5" style="fill:#e2d9f2;"/>
+        </g>
+    </g>
+</svg>

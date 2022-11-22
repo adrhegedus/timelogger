@@ -1,0 +1,21 @@
+﻿@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+#project-list {
+	.project-list__project {
+		transition: box-shadow 0.2s ease,
+					border-color 0.2s ease;
+		cursor: pointer;
+
+		&:not(.project-list__project--completed):hover{
+			border-color: rgba($info, 0.5);
+			box-shadow: 0 0 5px 1px rgba($info, 0.2);
+		}
+
+		&.project-list__project--completed:hover {
+			border-color: rgba($success, 0.5);
+			box-shadow: 0 0 5px 1px rgba($success, 0.2);
+		}
+	}
+}
